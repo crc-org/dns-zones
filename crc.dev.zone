@@ -2,7 +2,7 @@ $ORIGIN dev.
 $TTL 5m
 
 crc     IN      SOA     ns1.osci.io. hostmaster.osci.io. (
-                        1            ; serial
+                        2025020102   ; serial
                         4h           ; refresh
                         15m          ; retry
                         8h           ; expire
