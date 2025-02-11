@@ -1,0 +1,41 @@
+$ORIGIN dev.
+$TTL 5m
+
+crc     IN      SOA     ns1.osci.io. hostmaster.osci.io. (
+                        1            ; serial
+                        4h           ; refresh
+                        15m          ; retry
+                        8h           ; expire
+                        4m)          ; negative caching TTL
+
+        IN      NS      ns1.osci.io.
+        IN      NS      ns2.osci.io.
+        IN      NS      ns3.osci.io.
+        MX      10      spool.mail.gandi.net.
+        MX      50      fb.mail.gandi.net.
+        IN TXT "v=spf1 include:_mailcust.gandi.net ?all"
+        IN      A       185.199.108.153
+        IN      A       185.199.109.153
+        IN      A       185.199.110.153
+        IN      A       185.199.111.153
+
+$ORIGIN crc.dev.
+
+_github-challenge-crc-org-org   IN TXT "5b41ebcdee"
+
+blog            IN      CNAME   webredir.gandi.net.
+doc             IN      CNAME   docs
+docs            IN      CNAME   webredir.gandi.net.
+download        IN      CNAME   webredir.gandi.net.
+webmail         IN      CNAME   webmail.gandi.net.
+www             IN      CNAME   code-ready.github.io.
+gm1._domainkey  IN      CNAME   gm1.gandimail.net.
+gm2._domainkey  IN      CNAME   gm2.gandimail.net.
+gm3._domainkey  IN      CNAME   gm3.gandimail.net.
+
+_imap._tcp          IN      SRV     0 0 0       .
+_imaps._tcp         IN      SRV     0 1 993     mail.gandi.net.
+_pop3._tcp          IN      SRV     0 0 0       .
+_pop3s._tcp         IN      SRV     10 1 995    mail.gandi.net.
+_srv.dns-test       IN      SRV     10 10 1234  crc.dev.
+_submission._tcp    IN      SRV     0 1 465     mail.gandi.net.
