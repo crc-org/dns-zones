@@ -2,15 +2,16 @@ $ORIGIN dev.
 $TTL 5m
 
 crc     IN      SOA     ns1.osci.io. hostmaster.osci.io. (
-                        1739404800   ; serial
+                        1740614401   ; serial
                         4h           ; refresh
                         15m          ; retry
                         8h           ; expire
                         4m)          ; negative caching TTL
 
-        IN      NS      ns1.osci.io.
-        IN      NS      ns2.osci.io.
-        IN      NS      ns3.osci.io.
+        IN      NS      dns1.p04.nsone.net.
+        IN      NS      dns2.p04.nsone.net.
+        IN      NS      dns3.p04.nsone.net.
+        IN      NS      dns4.p04.nsone.net.
         MX      10      spool.mail.gandi.net.
         MX      50      fb.mail.gandi.net.
         IN TXT "v=spf1 include:_mailcust.gandi.net ?all"
