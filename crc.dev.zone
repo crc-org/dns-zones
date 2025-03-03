@@ -8,9 +8,10 @@ crc     IN      SOA     ns1.osci.io. hostmaster.osci.io. (
                         8h           ; expire
                         4m)          ; negative caching TTL
 
-        IN      NS      ns1.osci.io.
-        IN      NS      ns2.osci.io.
-        IN      NS      ns3.osci.io.
+        IN      NS      dns1.p04.nsone.net.
+        IN      NS      dns2.p04.nsone.net.
+        IN      NS      dns3.p04.nsone.net.
+        IN      NS      dns4.p04.nsone.net.
         MX      10      spool.mail.gandi.net.
         MX      50      fb.mail.gandi.net.
         IN TXT "v=spf1 include:_mailcust.gandi.net ?all"
